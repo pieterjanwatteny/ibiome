@@ -20,4 +20,7 @@ function showData(plantData) {
     let data=plantData
     console.log(data["Humid"])
     console.log(data.Temp)
+    document.querySelector("#Temperature").innerHTML =("Temperature ="+data.Temp);
+    document.querySelector("#Humidity").innerHTML=data.Temp;
+
 }
