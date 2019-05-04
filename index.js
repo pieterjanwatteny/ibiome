@@ -6,7 +6,7 @@ app.use(express.static("public"))
 //app.use(express.json())
 let lastData = {}
 
-app.post("/api/data/",express.json(), (req, res) => {
+app.post("/api/data/", express.json(), (req, res) => {
     lastData = req.body
     console.log(lastData)
     res.sendStatus(200)

@@ -16,5 +16,6 @@ fetch(`${url}/api/data`)
 }
 
 function showData(plantData) {
-    console.log(plantData);
+    console.log("The current humidity = "+plantData.Humid)
+    console.log("the temprature is = "+plantData.Temp);
 }
