@@ -27,3 +27,10 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
 }
+#plantdisplay{
+    margin-top: 20vh;
+}
+h1{
+    font-family: 'Crete Round', serif;
+    color: #4e555b;
+}
