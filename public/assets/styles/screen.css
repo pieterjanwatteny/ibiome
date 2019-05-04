@@ -1,36 +1,47 @@
-body{
+body {
     height: 100vh;
     width: 100vw;
     background-image: url("../../images/600145-PMXAGX-487.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-header{
+
+header {
     color: #4e555b;
     margin: 0;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-.btn{
-    background-color: #A6B481;
+
+.btn {
+    background-color: #98C764;
     color: white;
     border: hidden;
     opacity: 0.5;
 }
-#overview{
+
+#overview {
     height: 100vh;
     width: 100vw;
     background-image: url("../../images/4066.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-#plantdisplay{
+
+#plantdisplay {
     margin-top: 20vh;
 }
-h1{
+
+h1 {
+   
     font-family: 'Crete Round', serif;
     color: #4e555b;
+}
+
+#title {
+    text-align: center;
+    color: #98C764
 }
