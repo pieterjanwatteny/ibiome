@@ -16,4 +16,4 @@ app.get("/api/data/", (req, res) => {
     res.json(lastData)
 })
 
-app.listen(5000)
+app.listen(process.env.PORT || 5000)
