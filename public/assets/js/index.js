@@ -17,5 +17,7 @@ fetch(`${url}/api/data`)
 
 function showData(plantData) {
     console.log(plantData)
-    
+    let data=plantData
+    console.log(data["Humid"])
+    console.log(data.Temp)
 }
