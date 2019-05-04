@@ -3,10 +3,10 @@ const express = require("express")
 const app = express()
 
 app.use(express.static("public"))
-app.use(express.json())
+//app.use(express.json())
 let lastData = {}
 
-app.post("/api/data/", (req, res) => {
+app.post("/api/data/",express.json(), (req, res) => {
     lastData = req.body
     console.log(lastData)
     res.sendStatus(200)
