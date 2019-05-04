@@ -3,7 +3,8 @@
 document.addEventListener("DOMContentLoaded", init)
 
 function init() {
-getData();
+    console.log("init");
+    getData();
 }
 
 const url = "https://ibiome.herokuapp.com"
