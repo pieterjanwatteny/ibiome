@@ -10,21 +10,21 @@ header {
     color: #4e555b;
     margin: 0;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
 
 .btn {
-    font-size: 2rem
+    font-size: 2rem;
     background-color: #98C764;
     color: white;
     border: hidden;
     opacity: 0.5;
     margin: 0;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -44,7 +44,7 @@ header {
 }
 
 h1 {
-   
+    font-size: 3rem;
     font-family: 'Crete Round', serif;
     color: #4e555b;
 }
