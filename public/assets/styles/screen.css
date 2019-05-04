@@ -17,7 +17,7 @@ header {
 }
 
 .btn {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #98C764;
     color: white;
     border: hidden;
@@ -44,7 +44,8 @@ header {
 }
 
 h1 {
-    font-size: 3rem;
+    
+    font-size: 2rem;
     font-family: 'Crete Round', serif;
     color: #4e555b;
 }
