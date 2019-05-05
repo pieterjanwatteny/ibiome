@@ -1,7 +1,6 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", init)
-let store =locforage.createInstance({ name: "IBiome"})
 
 function init() {
     getjsonplantsData()
@@ -22,7 +21,9 @@ function showData(plantData) {
     document.querySelector("#Humidity").innerHTML = (""+data.Humid + " %");
     storeLocalForage(data);
 }
+
 function storeLocalForage(data){
+    let store =localforage.createInstance({ name: "IBiome"})
     let plntdata= data
     let storedata= [{ id: 1, Temperature: plntdata.Temp},
                     { id: 2, Humidity: plntdata.Humid}];
@@ -31,6 +32,7 @@ function storeLocalForage(data){
     })
 }
 function logLocals(){
+    let store =localforage.createInstance({ name: "IBiome"})
     store.getItem("Plantdata").then(function(value){
         console.log("Data retrieved : " ,value);})
     
