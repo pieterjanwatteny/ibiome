@@ -28,8 +28,8 @@ function logLocals(){
         console.log("Data retrieved : " ,value);})
 
     let data= store.getItem("Plantdata");
-    console.log(data[1].Temperature);
-    
+    console.log(data[1]);
+
     document.querySelector("#Temperature").innerHTML = (""+data.Temp + " °C");
     document.querySelector("#Humidity").innerHTML = (""+data.Humid + " %");   
     
