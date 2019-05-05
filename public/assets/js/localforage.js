@@ -1,12 +1,12 @@
-import idbDriver from './drivers/indexeddb';
-import websqlDriver from './drivers/websql';
-import localstorageDriver from './drivers/localstorage';
-import serializer from './utils/serializer';
-import Promise from './utils/promise';
-import executeCallback from './utils/executeCallback';
-import executeTwoCallbacks from './utils/executeTwoCallbacks';
-import includes from './utils/includes';
-import isArray from './utils/isArray';
+import idbDriver from 'drivers/indexeddb';
+import websqlDriver from 'drivers/websql';
+import localstorageDriver from 'drivers/localstorage';
+import serializer from 'utils/serializer';
+import Promise from 'utils/promise';
+import executeCallback from 'utils/executeCallback';
+import executeTwoCallbacks from 'utils/executeTwoCallbacks';
+import includes from 'utils/includes';
+import isArray from 'utils/isArray';
 
 // Drivers are stored here when `defineDriver()` is called.
 // They are shared across all instances of localForage.
