@@ -9,16 +9,16 @@ function init() {
 
 const url = "https://ibiome.herokuapp.com"
 
-function getjsonplantsData(){
-fetch(`${url}/api/data`)
-    .then(res => res.json())
-    .then(data => showData(data))
+function getjsonplantsData() {
+    fetch(`${url}/api/data`)
+        .then(res => res.json())
+        .then(data => showData(data))
 }
 
 function showData(plantData) {
-     let data=plantData
-  
-    document.querySelector("#Temperature").innerHTML =(data.Temp +" °C");
-    document.querySelector("#Humidity").innerHTML=(data.Humid +" %")
+    let data = plantData;
+    console.log(data);
+    document.querySelector("#Temperature").innerHTML = (data.Temp + " °C");
+    document.querySelector("#Humidity").innerHTML = (data.Humid + " %");
 
 }
