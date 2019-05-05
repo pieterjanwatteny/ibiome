@@ -5,16 +5,8 @@ self.addEventListener("install", function (e) {
 });
 
 const CACHE_NAME = "my-cache";
-const urlsToCache = ['/',
-    '/index.html',
-    '/overview.html',
-    '/assets/js/index.js',
-    '/assets/js/localforage.js',
-    '/assets/styles/bootstrap.min.css',
-    '/assets/styles/Reset.css',
-    '/assets/styles/screen.css',
-    '/assets/images/4066.jpg',
-    '/assets/images/600145-PMXAGX-487.jpg'];
+const urlsToCache = [];
+
 
 self.addEventListener("install", function (e) {
     e.waitUntil(
@@ -27,11 +19,22 @@ self.addEventListener("install", function (e) {
 self.addEventListener("fetch", function (e) {
     e.respondWith(
         caches.match(e.request).then(function (res) {
-            if (res){
+            if (res) {
                 return res;
-            } else{
+            } else {
                 return fetch(e.request);
             }
         })
     );
 });
+
+/*    '/',
+    '/index.html',
+    '/overview.html',
+    '/assets/js/index.js',
+    '/assets/js/localforage.js',
+    '/assets/styles/bootstrap.min.css',
+    '/assets/styles/Reset.css',
+    '/assets/styles/screen.css',
+    '/assets/images/4066.jpg',
+    '/assets/images/600145-PMXAGX-487.jpg'];*/
