@@ -4,26 +4,18 @@ document.addEventListener("DOMContentLoaded", init)
 
 function init() {
     getjsonplantsData()
-  //  logLocals()
+    logLocals()
 }
 
 const url = "https://ibiome.herokuapp.com"
-
+const store =localforage.createInstance({ name: "IBiome"})
 function getjsonplantsData() {
     fetch(`${url}/api/data`)
         .then(res => res.json())
-        .then(data => showData(data))
-}
-
-function showData(plantData) {
-    let data = plantData;
-    document.querySelector("#Temperature").innerHTML = (""+data.Temp + " °C");
-    document.querySelector("#Humidity").innerHTML = (""+data.Humid + " %");
-    storeLocalForage(data);
+        .then(data => storeLocalForage(data))
 }
 
 function storeLocalForage(data){
-    let store =localforage.createInstance({ name: "IBiome"})
     let plntdata= data
     let storedata= [{ id: 1, Temperature: plntdata.Temp},
                     { id: 2, Humidity: plntdata.Humid}];
@@ -32,9 +24,10 @@ function storeLocalForage(data){
     })
 }
 function logLocals(){
-    let store =localforage.createInstance({ name: "IBiome"})
     store.getItem("Plantdata").then(function(value){
         console.log("Data retrieved : " ,value);})
     
-
+    document.querySelector("#Temperature").innerHTML = (""+data.Temp + " °C");
+    document.querySelector("#Humidity").innerHTML = (""+data.Humid + " %");   
+    
 }
