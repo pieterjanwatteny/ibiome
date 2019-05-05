@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", init)
 
 function init() {
+    registerServiceWorker()
     getjsonplantsData()
     logLocals()
 }
@@ -13,6 +14,17 @@ function getjsonplantsData() {
     fetch(`${url}/api/data`)
         .then(res => res.json())
         .then(data => storeLocalForage(data))
+}
+function registerServiceWorker() {
+    //check suport
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("././sw.js").then(function (res) {
+            console.log("Succesfull register service worker with scope:", res.scope);
+        }).catch(function (err) {
+            console.log("Error registering service worker:", err);
+        })
+    }
+
 }
 
 function storeLocalForage(data) {
@@ -31,7 +43,7 @@ function logLocals() {
     });
 
 
-    
+
 
 
 }
