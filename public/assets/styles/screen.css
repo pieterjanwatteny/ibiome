@@ -43,7 +43,7 @@ header {
     margin-top: 20vh;
 }
 
-h1 {
+h1{
     font-size: 2rem;
     font-family: 'Crete Round', serif;
     color: #4e555b;
@@ -52,4 +52,7 @@ h1 {
 #title {
     text-align: center;
     color: #98C764
+}
+h2{
+    font-size: 1rem;
 }
