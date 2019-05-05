@@ -17,8 +17,6 @@ function getjsonplantsData() {
 
 function showData(plantData) {
     let data = plantData;
-    console.log(data);
-    document.querySelector("#Temperature").innerHTML = (data.Temp + " °C");
-    document.querySelector("#Humidity").innerHTML = (data.Humid + " %");
-
+    document.querySelector("#Temperature").innerHTML = (""+data.Temp + " °C");
+    document.querySelector("#Humidity").innerHTML = (""+data.Humid + " %");
 }
