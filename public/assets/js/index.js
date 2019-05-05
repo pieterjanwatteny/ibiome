@@ -23,9 +23,9 @@ function showData(plantData) {
     storeLocalForage(data);
 }
 function storeLocalForage(data){
-    let data= data
-    let storedata= [{ id: 1, Temperature: data.Temp},
-                    { id: 2, Humidity: data.Humid}];
+    let plntdata= data
+    let storedata= [{ id: 1, Temperature: plntdata.Temp},
+                    { id: 2, Humidity: plntdata.Humid}];
     store.setItem("Plantdata", storedata).then(function(value){
         console.log("Data stored",value)
     })
@@ -34,5 +34,5 @@ function logLocals(){
     store.getItem("Plantdata").then(function(value){
         console.log("Data retrieved : " ,value);})
     
-        
+
 }
