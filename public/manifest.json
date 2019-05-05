@@ -1,13 +1,13 @@
 {
   "name": "IBiome",
-  "short_name": "Plantz",
+  "short_name": "IBiome",
   "theme_color": "#97c964",
   "background_color": "#97c964",
   "display": "standalone",
   "Scope": "/",
   "start_url": "https://ibiome.herokuapp.com/index.html",
   "icons": [
-    
+
     {
       "src": "images/icons/icon-72x72.png",
       "sizes": "72x72",
