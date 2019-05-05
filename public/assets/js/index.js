@@ -16,10 +16,8 @@ fetch(`${url}/api/data`)
 }
 
 function showData(plantData) {
-    console.log(plantData)
-    let data=plantData
-    console.log(data["Humid"])
-    console.log(data.Temp)
+     let data=plantData
+  
     document.querySelector("#Temperature").innerHTML =("Temperature = "+data.Temp +" °C");
     document.querySelector("#Humidity").innerHTML=("Humidity = "+data.Humid +" %")
 
