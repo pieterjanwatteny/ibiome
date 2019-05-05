@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", init)
 
 function init() {
     getjsonplantsData()
-    logLocals()
+  //  logLocals()
 }
 
 const url = "https://ibiome.herokuapp.com"
