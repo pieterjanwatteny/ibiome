@@ -12,9 +12,7 @@ const urlsToCache = ['/',
     '/assets/styles/Reset.css',
     '/assets/styles/screen.css',
     '/assets/picograms/bonzai.svg',
-    '/assets/images/4066.jpg',
-    '/assets/images/600145-PMXAGX-487.jpg',
-    '/assets/js/index.js'];
+    '/assets/images/4066.jpg'];
 
 self.addEventListener("install", function (e) {
     e.waitUntil(
@@ -35,11 +33,3 @@ self.addEventListener("fetch", function (e) {
         })
     );
 });
-
-/*
-    '/assets/js/index.js',
-    '/assets/styles/bootstrap.min.css',
-    '/assets/styles/Reset.css',
-    '/assets/styles/screen.css',
-    
-    '/assets/images/600145-PMXAGX-487.jpg'];*/
