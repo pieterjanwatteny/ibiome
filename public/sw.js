@@ -12,6 +12,9 @@ const urlsToCache = ['/',
     '/assets/styles/Reset.css',
     '/assets/styles/screen.css',
     '/assets/pictograms/bonzai.svg',
+    '/assets/js/index.js',
+    '/assets/js/localforage.js',
+    
     ];
 
 self.addEventListener("install", function (e) {
