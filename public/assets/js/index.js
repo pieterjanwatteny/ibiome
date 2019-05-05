@@ -10,6 +10,7 @@ function init() {
 
 const url = "https://ibiome.herokuapp.com"
 const store = localforage.createInstance({ name: "IBiome" })
+
 function getjsonplantsData() {
     fetch(`${url}/api/data`)
         .then(res => res.json())
