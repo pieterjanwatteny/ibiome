@@ -1,10 +1,11 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", init)
+let store =locforage.createInstance({ name: "IBiome"})
 
 function init() {
-
     getjsonplantsData()
+    logLocals()
 }
 
 const url = "https://ibiome.herokuapp.com"
@@ -19,4 +20,19 @@ function showData(plantData) {
     let data = plantData;
     document.querySelector("#Temperature").innerHTML = (""+data.Temp + " °C");
     document.querySelector("#Humidity").innerHTML = (""+data.Humid + " %");
+    storeLocalForage(data);
+}
+function storeLocalForage(data){
+    let data= data
+    let storedata= [{ id: 1, Temperature: data.Temp},
+                    { id: 2, Humidity: data.Humid}];
+    store.setItem("Plantdata", storedata).then(function(value){
+        console.log("Data stored",value)
+    })
+}
+function logLocals(){
+    store.getItem("Plantdata").then(function(value){
+        console.log("Data retrieved : " ,value);})
+    
+        
 }
