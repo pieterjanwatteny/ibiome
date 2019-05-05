@@ -25,8 +25,8 @@ function storeLocalForage(data){
 }
 function logLocals(){
     store.getItem("Plantdata").then(function(value){
-        console.log("Data retrieved : " ,value);})
-        console.log(value[0])
+        console.log("Data retrieved : " ,value);
+        console.log(value[0])});
     
     document.querySelector("#Temperature").innerHTML = (""+data.Temp + " °C");
     document.querySelector("#Humidity").innerHTML = (""+data.Humid + " %");   
