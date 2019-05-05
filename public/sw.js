@@ -6,8 +6,8 @@ self.addEventListener("install", function (e) {
 
 const CACHE_NAME = "my-cache";
 const urlsToCache = ['/',
-    'index.html',
-    'overview.html',
+    '/index.html',
+    '/overview.html',
     '/assets/js/index.js',
     '/assets/js/localforage.js',
     '/assets/styles/bootstrap.min.css',
