@@ -15,9 +15,7 @@ const urlsToCache = ['/',
     '/assets/js/index.js',
     '/assets/js/localforage.js',
     '/assets/images/4066.jpg',
-    '/assets/images/600145-PMXAGX-487.jpg'
-
-    ];
+];
 
 self.addEventListener("install", function (e) {
     e.waitUntil(
