@@ -3,6 +3,7 @@
 self.addEventListener("install", function (e) {
     console.log("Performing service worker install...");
 });
+
 const CACHE_NAME = "my-cache";
 const urlsToCache = ['/',
     'index.html',

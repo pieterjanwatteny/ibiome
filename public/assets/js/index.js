@@ -3,9 +3,15 @@
 document.addEventListener("DOMContentLoaded", init)
 
 function init() {
+    checkCacheSuppport()
     registerServiceWorker()
     getjsonplantsData()
     logLocals()
+}
+
+function checkCacheSuppport() {
+    let cacheSupport = 'caches' in self;
+    console.log(cacheSupport);
 }
 
 const url = "https://ibiome.herokuapp.com"
