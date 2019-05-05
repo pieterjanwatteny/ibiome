@@ -11,8 +11,8 @@ const urlsToCache = ['/',
     '/assets/styles/bootstrap.min.css',
     '/assets/styles/Reset.css',
     '/assets/styles/screen.css',
-    '/assets/picograms/bonzai.svg',
-    '/assets/images/4066.jpg'];
+    '/assets/pictograms/bonzai.svg',
+    ];
 
 self.addEventListener("install", function (e) {
     e.waitUntil(
