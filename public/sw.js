@@ -6,9 +6,12 @@ self.addEventListener("install", function (e) {
 
 const CACHE_NAME = "my-cache";
 const urlsToCache = ['/',
-                     '/index.html',
-                     '/overview.html',];
-
+    '/index.html',
+    '/overview.html',
+    '/assets/styles/bootstrap.min.css',
+    '/assets/styles/Reset.css',
+    '/assets/styles/screen.css',
+    '/assets/js/index.js'];
 
 self.addEventListener("install", function (e) {
     e.waitUntil(
@@ -30,7 +33,7 @@ self.addEventListener("fetch", function (e) {
     );
 });
 
-/*    
+/*
     '/assets/js/index.js',
     '/assets/js/localforage.js',
     '/assets/styles/bootstrap.min.css',
