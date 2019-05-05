@@ -11,6 +11,9 @@ const urlsToCache = ['/',
     '/assets/styles/bootstrap.min.css',
     '/assets/styles/Reset.css',
     '/assets/styles/screen.css',
+    '/assets/picograms/bonzai.svg',
+    '/assets/images/4066.jpg',
+    '/assets/images/600145-PMXAGX-487.jpg',
     '/assets/js/index.js'];
 
 self.addEventListener("install", function (e) {
@@ -35,9 +38,8 @@ self.addEventListener("fetch", function (e) {
 
 /*
     '/assets/js/index.js',
-    '/assets/js/localforage.js',
     '/assets/styles/bootstrap.min.css',
     '/assets/styles/Reset.css',
     '/assets/styles/screen.css',
-    '/assets/images/4066.jpg',
+    
     '/assets/images/600145-PMXAGX-487.jpg'];*/
